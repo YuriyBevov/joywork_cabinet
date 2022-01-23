@@ -1,0 +1,56 @@
+.average-table {
+    &__title {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    &__content {
+
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 16px;
+        padding-right: 180px;
+        
+        &:last-child {
+            margin-bottom: 30px;
+        }
+
+        border-top: $light-border;
+
+        &:last-child {
+            border-bottom: $light-border;
+        }
+
+        span {
+            width: 50%;
+        }
+
+        a {
+            position: absolute;
+            top: 50%;
+            right: 0;
+
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 14px;
+            line-height: 17px;
+
+            width: fit-content;
+
+            padding: 11px 14px;
+
+            border: 1px solid #cdced0;
+            border-radius: 2px;
+
+            background: linear-gradient(180deg, #fefefe 0%, #f6f6f6 100%);
+            color: #848484;
+        }
+    }
+}

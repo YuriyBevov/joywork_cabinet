@@ -1,0 +1,95 @@
+.object-card {
+    display: flex;
+    padding: 20px 0;
+
+    border-bottom: $light-border;
+
+    img {
+        margin-right: 20px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    &__header {
+        padding-bottom: 10px;
+        border-bottom: $light-border;
+
+        &-top {
+            margin-bottom: 10px;
+            span {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+
+        &-field {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            
+            padding-top: 10px;
+            padding-bottom: 30px;
+
+            span {
+                margin-bottom: 10px;
+            }
+
+            &:first-child {
+                border-right: $light-border;
+            }
+
+            &:not(:first-child) {
+                padding-left: 20px;
+            }
+        }
+
+        &-ref {
+            margin-left: 10px;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        padding-top: 10px;
+        border-top: $light-border;
+
+        span {
+            margin-right: auto;
+            &.cmn__danger {
+                position: relative;
+                padding-right: 16px;
+
+                &::after {
+                    position: absolute;
+
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+
+                    content: '';
+
+                    width: 12px;
+                    height: 12px;
+
+                    background-image: url("../assets/img/arr-down-icon.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 12px;
+                }
+            }
+        }
+
+        a {
+            margin-right: 20px;
+        }
+    }
+}
