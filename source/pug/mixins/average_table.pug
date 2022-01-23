@@ -6,8 +6,9 @@ mixin average_table(title, array)
     .average-table__content
       each item in array
         .average-table__row
-          span.cmn__text.cmn__text--small.cmn__gray.average-table__name= item.name
-          span.cmn__text.cmn__text--small.cmn__gray.average-table__value(class=item.class)= item.value
+          .average-table__row-pricelist
+            span.cmn__text.cmn__text--small.cmn__gray.average-table__name= item.name
+            span.cmn__text.cmn__text--small.cmn__gray.average-table__value(class=item.class)= item.value
 
           if item.link
-            a(href="#") Объекты в сравнении 
+            a(href="#") Объекты в сравнении

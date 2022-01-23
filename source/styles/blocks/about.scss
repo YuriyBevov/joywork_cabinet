@@ -35,6 +35,10 @@
         }
 
         &-position {
+            svg {
+                min-width: 20px;
+            }
+
             span {
                 padding-left: 0;
             }
