@@ -3,7 +3,7 @@
     display: flex;
     padding: 20px 0;
 
-    @media(max-width: $mobile) {
+    @media(max-width: 400px) {
         flex-direction: column;
     }
 
@@ -19,7 +19,7 @@
             height: 132px;
         }
 
-        @media(max-width: $mobile) {
+        @media(max-width: 400px) {
             position: relative;
             top: 0;
             width: 100%;
@@ -57,11 +57,11 @@
         }
 
         @media(max-width: $tablet) {
-            min-height: 160px;
+            min-height: 140px;
             padding-left: 175px;
         }
 
-        @media(max-width: $mobile) {
+        @media(max-width: 400px) {
             padding-left: 0;
             min-height: initial;
             padding-bottom: 20px;
@@ -71,7 +71,7 @@
     &__content {
         display: flex;
 
-        @media(max-width: $mobile) {
+        @media(max-width: 400px) {
             flex-direction: column;
         }
 
@@ -84,7 +84,11 @@
             padding-bottom: 30px;
             padding-right: 20px;
 
-            @media(max-width: $mobile) {
+            @media(max-width: $tablet) {
+                padding-bottom: 10px;
+            }
+
+            @media(max-width: 400px) {
                 width: 100%;
                 padding-bottom: 0;
             }
@@ -96,14 +100,14 @@
             &:first-child {
                 border-right: $light-border;
 
-                @media(max-width: $mobile) {
+                @media(max-width: 400px) {
                     border-right: 0;
                 }
             }
 
             &:not(:first-child) {
                 padding-left: 20px;
-                @media(max-width: $mobile) {
+                @media(max-width: 400px) {
                     padding-left: 0;
                     padding-top: 0;
                 }
@@ -151,7 +155,7 @@
         a {
             margin-right: 20px;
 
-            @media(max-width: $mobile) {
+            @media(max-width: 400px) {
                 margin-right: 10px;
 
                 &:last-child {

@@ -74,7 +74,7 @@ include ../../mixins/average_table
     each text in content
       p.cmn__text= text
   
-  .description__report
+  .description__report.js-collapsed
     span.cmn__text.cmn__text--med.cmn__main.cmn__f-semi Отчет для клиента:
 
     .description__report-content.js-report-field
@@ -83,7 +83,7 @@ include ../../mixins/average_table
       
     button(type="button").js-report-collapse-btn.cmn__text.cmn__text--info.cmn__underline.cmn__f-semi Развернуть 
 
-  .description__average
+  //.description__average
     h2.cmn__title Средние цены
     +average_table('Среднерыночная стоимость «Квадратного метра»', averagePerSquareList)
     +average_table('Среднерыночная стоимость «Объекта»', averagePerObjectList)
@@ -103,9 +103,4 @@ include ../../mixins/average_table
         li
           span.cmn__text.cmn__text--small.cmn__gray Сделка завтра:
           span.cmn__text.cmn__text--info.cmn__main.cmn__f-semi 300 150 000 р
-      
-    button(type="button")
-      span.cmn__text.cmn__main.cmn__underline Сформировать отчет для клиента
-
-
       
