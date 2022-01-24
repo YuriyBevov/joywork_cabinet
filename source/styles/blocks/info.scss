@@ -18,24 +18,4 @@
             border-bottom: $light-border;
         }
     }
-
-    &__adverts {
-        &-header {
-
-            h2 {
-                margin-bottom: 30px;
-            }
-
-            margin-bottom: 30px;
-
-            @media(max-width: $tablet_large) {
-                h2 {
-                    margin-bottom: 20px;
-                }
-    
-                margin-bottom: 16px;
-            }
-        }
-        
-    }
 } 
