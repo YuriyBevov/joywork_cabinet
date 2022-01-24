@@ -1,6 +1,7 @@
 let reportField = document.querySelector('.js-report-field');
 let btn = document.querySelector('.js-report-collapse-btn');
 let reportContainer = document.querySelector('.description__report');
+console.log('TEST SCRIPT')
 
 const resizeWidth = 1440;
 let isDesktopWidth = true;
