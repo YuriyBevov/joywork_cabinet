@@ -30,7 +30,7 @@ const setAbsolutPosition = (el) => {
 }
 
 const setRelativePosition = (el) => {
-    el.style.position =  'relative';
+    el.style.position =  'static';
     el.style.zIndex = 0;
 }
 
